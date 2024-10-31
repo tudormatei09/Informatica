@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, i, j;
+    cin >> n;
+    for(i = 1; i <= n; i++){          /// pentru pasul 1 (i==1) intram in al doilea for si analizam:
+        for(j = 1; j <= i; j++){      /// in primul rand j va fi 1 si cu j <= 1 (i=1), il sciem pe j, apoi iesim din for, deoarece ridicand pasul lui j de la 1 la 
+            cout << j << " ";         /// 2 nu se va mai indeplini conditia j <= i
+        }
+        cout << endl;
+    }
+    return 0;
+}
